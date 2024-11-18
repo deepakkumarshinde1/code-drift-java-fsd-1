@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  /* background-color: red; */
+  height: 400px;
+  width: 400px;
+  border-radius: 0%;
+
+  margin: 30px;
+
+  border-color: red;
+  border-width: 5px;
+  border-style: dashed;
+
+  overflow: auto;
+  padding: 20px;
+}
