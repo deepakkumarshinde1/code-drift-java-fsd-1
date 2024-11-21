@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* #CE0506
+
+Red CE
+Green 05
+Blue 06
+
+HexDecimal => 0 1 2 3 4 5 6 7 8 9 A B C D E F
+0 => Black
+F => White
+
+#000000 => black
+#ffffff => white
+#ff0000 => red
+#00ff00 => green
+#0000ff => blue
+#888888 => gray
+
+#880000 => dark */
+/* #330000 => */
+
+.header-section {
+  background-color: #ce0506;
+  /*padding: 20px;  top right bottom left  */
+  padding: 20px 80px; /* top-bottom left-right */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+}
+
+.brand {
+  background-color: white;
+  height: 50px;
+  width: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  font-size: 24px;
+  font-weight: bold;
+  color: #ce0506;
+}
+
+.menu-item > button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 22px;
+}
+
+.menu-item > .create-account {
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+}

@@ -1,0 +1,46 @@
+/* .flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+.width-50-percent {
+  width: 50%;
+} */
+/* class system
+   class selector ==> . as prefix
+*/
+
+/* .flex-item {
+  width: 25%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: magenta;
+  height: 200px;
+} */
+
+/* css resetting */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.main-header {
+  border-bottom-color: gray;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu-item {
+  margin: 10px;
+}
+
+/* child selector */
+.menu-item > a {
+  text-decoration: none;
+  color: gray;
+}
