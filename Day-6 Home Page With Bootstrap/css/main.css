@@ -1,0 +1,9 @@
+.main-section {
+  height: 70vh;
+  background-image: linear-gradient(transparent, #1b0808a8, #000000d0),
+    url("../images/bg-image.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background: linear-gradient(red, green, blue); */
+}
