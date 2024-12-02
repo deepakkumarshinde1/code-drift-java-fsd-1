@@ -7,3 +7,45 @@
   background-position: center;
   /* background: linear-gradient(red, green, blue); */
 }
+
+.brand {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.search-section-input {
+  width: 50vw;
+}
+
+.input-search-location {
+  width: 40%;
+}
+.input-search-restaurant {
+  width: 60%;
+}
+.image {
+  width: 40%;
+}
+.quick-search-item {
+  width: 30%;
+  height: 20vh;
+}
+
+.quick-search-item-image {
+  width: 50%;
+  overflow: hidden;
+}
+.quick-search-item-image > img {
+  transform: translateX(-100px);
+}
+.quick-search-item-content {
+  width: 50%;
+}
