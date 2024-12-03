@@ -26,29 +26,115 @@
   </head>
   <body>
     <main class="container-fluid">
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="create-account-modal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+      >
+        <div class="modal-dialog modal-md">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Create Account
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-12">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label"
+                        >Email address</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                      />
+                      <div id="emailHelp" class="form-text">
+                        We'll never share your email with anyone else.
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="exampleInputPassword1"
+                      />
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="exampleCheck1"
+                      />
+                      <label class="form-check-label" for="exampleCheck1"
+                        >Check me out</label
+                      >
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <section class="main-section row bg-danger text-white align-items-start">
         <header
           class="col-12 d-flex flex-row justify-content-end px-5 py-3 gap-3"
         >
           <button class="btn text-white">Login</button>
-          <button class="btn btn-outline-light">Create Account</button>
+          <button
+            class="btn btn-outline-light"
+            data-bs-toggle="modal"
+            data-bs-target="#create-account-modal"
+          >
+            Create Account
+          </button>
         </header>
         <section class="col-12 d-flex flex-column align-items-center">
           <span class="text-danger bg-white brand">Z</span>
           <p class="fs-1 fw-bold">Find the best restaurants, cafés, and bars</p>
           <section class="d-flex search-section-input gap-4">
-            <div class="input-group mb-3 input-search-location">
+            <div
+              class="input-group mb-3 input-search-location d-flex flex-column position-relative"
+            >
               <input
                 type="text"
-                class="form-control rounded-0"
+                class="form-control rounded-0 w-100"
                 placeholder="Search Location"
                 aria-label="Username"
                 aria-describedby="basic-addon1"
               />
+              <ul class="list-group mt-2 rounded-0 location-list shadow">
+                <li class="list-group-item">Pune</li>
+                <li class="list-group-item">Akola</li>
+                <li class="list-group-item">Nashik</li>
+                <li class="list-group-item">Mumbai</li>
+                <li class="list-group-item">Nagpur</li>
+              </ul>
             </div>
             <div class="input-group mb-3 w-75 input-search-restaurant">
               <span
-                class="input-group-text rounded-0 bg-white border-0"
+                class="input-group-text rounded-0 bg-white border-0 position-relative"
                 id="basic-addon1"
                 ><i class="fa fa-search" aria-hidden="true"></i
               ></span>
@@ -59,6 +145,75 @@
                 aria-label="Username"
                 aria-describedby="basic-addon1"
               />
+
+              <ul class="list-group mt-2 rounded-0 restaurants-list shadow">
+                <li class="list-group-item d-flex gap-3">
+                  <img
+                    class="restaurants-search-thumb-image"
+                    src="./images/quick-search-2.png"
+                    alt=""
+                  />
+                  <section>
+                    <p class="m-0 fw-bold">The Big Chill Cakery</p>
+                    <p class="m-0 text-secondary">Sarjapur Road, Bengaluru</p>
+                  </section>
+                </li>
+                <li class="list-group-item d-flex gap-3">
+                  <img
+                    class="restaurants-search-thumb-image"
+                    src="./images/quick-search-2.png"
+                    alt=""
+                  />
+                  <section>
+                    <p class="m-0 fw-bold">The Big Chill Cakery</p>
+                    <p class="m-0 text-secondary">Sarjapur Road, Bengaluru</p>
+                  </section>
+                </li>
+                <li class="list-group-item d-flex gap-3">
+                  <img
+                    class="restaurants-search-thumb-image"
+                    src="./images/quick-search-2.png"
+                    alt=""
+                  />
+                  <section>
+                    <p class="m-0 fw-bold">The Big Chill Cakery</p>
+                    <p class="m-0 text-secondary">Sarjapur Road, Bengaluru</p>
+                  </section>
+                </li>
+                <li class="list-group-item d-flex gap-3">
+                  <img
+                    class="restaurants-search-thumb-image"
+                    src="./images/quick-search-2.png"
+                    alt=""
+                  />
+                  <section>
+                    <p class="m-0 fw-bold">The Big Chill Cakery</p>
+                    <p class="m-0 text-secondary">Sarjapur Road, Bengaluru</p>
+                  </section>
+                </li>
+                <li class="list-group-item d-flex gap-3">
+                  <img
+                    class="restaurants-search-thumb-image"
+                    src="./images/quick-search-2.png"
+                    alt=""
+                  />
+                  <section>
+                    <p class="m-0 fw-bold">The Big Chill Cakery</p>
+                    <p class="m-0 text-secondary">Sarjapur Road, Bengaluru</p>
+                  </section>
+                </li>
+                <li class="list-group-item d-flex gap-3">
+                  <img
+                    class="restaurants-search-thumb-image"
+                    src="./images/quick-search-2.png"
+                    alt=""
+                  />
+                  <section>
+                    <p class="m-0 fw-bold">The Big Chill Cakery</p>
+                    <p class="m-0 text-secondary">Sarjapur Road, Bengaluru</p>
+                  </section>
+                </li>
+              </ul>
             </div>
           </section>
         </section>
