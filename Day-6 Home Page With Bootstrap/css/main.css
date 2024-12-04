@@ -63,3 +63,40 @@
   height: 50px;
   border-radius: 50%;
 }
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .brand {
+    width: 75px;
+    height: 75px;
+    font-size: 32px;
+  }
+
+  .m-fs-3 {
+    font-size: 16px !important;
+  }
+
+  .search-section-input {
+    width: 90vw;
+  }
+
+  .input-search-location,
+  .input-search-restaurant {
+    width: 100% !important;
+  }
+
+  .main-section {
+    height: auto !important;
+    background-image: linear-gradient(transparent, #1b0808a8, #000000d0),
+      url("../images/bg-image.png");
+    background-size: 150% 150%;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background: linear-gradient(red, green, blue); */
+  }
+
+  .quick-search-item {
+    width: 100%;
+    height: 20vh;
+  }
+}

@@ -99,7 +99,7 @@
       </div>
       <section class="main-section row bg-danger text-white align-items-start">
         <header
-          class="col-12 d-flex flex-row justify-content-end px-5 py-3 gap-3"
+          class="col-12 d-lg-flex d-md-none flex-row justify-content-end px-5 py-3 gap-3 d-none"
         >
           <button class="btn text-white">Login</button>
           <button
@@ -111,9 +111,13 @@
           </button>
         </header>
         <section class="col-12 d-flex flex-column align-items-center">
-          <span class="text-danger bg-white brand">Z</span>
-          <p class="fs-1 fw-bold">Find the best restaurants, cafés, and bars</p>
-          <section class="d-flex search-section-input gap-4">
+          <span class="text-danger bg-white brand mt-5 mt-lg-0 mt-md-0">Z</span>
+          <p class="fs-1 m-fs-3 fw-bold">
+            Find the best restaurants, cafés, and bars
+          </p>
+          <section
+            class="d-flex search-section-input flex-wrap flex-lg-nowrap flex-md-nowrap gap-lg-4 gap-md-4 gap-0"
+          >
             <div
               class="input-group mb-3 input-search-location d-flex flex-column position-relative"
             >
@@ -124,7 +128,7 @@
                 aria-label="Username"
                 aria-describedby="basic-addon1"
               />
-              <ul class="list-group mt-2 rounded-0 location-list shadow">
+              <ul class="list-group mt-2 rounded-0 location-list shadow d-none">
                 <li class="list-group-item">Pune</li>
                 <li class="list-group-item">Akola</li>
                 <li class="list-group-item">Nashik</li>
@@ -146,7 +150,9 @@
                 aria-describedby="basic-addon1"
               />
 
-              <ul class="list-group mt-2 rounded-0 restaurants-list shadow">
+              <ul
+                class="list-group mt-2 rounded-0 restaurants-list shadow d-none"
+              >
                 <li class="list-group-item d-flex gap-3">
                   <img
                     class="restaurants-search-thumb-image"
@@ -219,7 +225,7 @@
         </section>
       </section>
       <section class="quick-search row justify-content-center">
-        <section class="col-10 py-4">
+        <section class="col-11 col-lg-10 col-md-10 py-4">
           <h2>Quick Searches</h2>
           <p>Discover restaurants by type of meal</p>
           <section class="quick-search-item-list d-flex flex-wrap gap-4">
