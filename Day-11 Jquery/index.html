@@ -3,12 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jquery basic</title>
+    <title>Jquery Day-2</title>
+    <style>
+      .table {
+        border-collapse: collapse;
+        width: 90%;
+        margin: 10px;
+      }
+
+      .table th,
+      .table td {
+        border: 1px solid black;
+        padding: 12px;
+      }
+    </style>
   </head>
   <body>
-    <h1 class="h1-text">Hello</h1>
-    <h1 class="h1-text">Hello</h1>
-    <h1 class="h1-text">Hello</h1>
+    <input type="text" id="inputText" placeholder="Enter your name" />
+    <button id="saveName">Save</button>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th width="20%">Sr No</th>
+          <th width="60%">Name</th>
+          <th width="20%">Action</th>
+        </tr>
+      </thead>
+      <tbody id="userData"></tbody>
+    </table>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
